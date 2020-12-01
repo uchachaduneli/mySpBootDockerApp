@@ -19,7 +19,7 @@ public class UserController {
         list.add(new User(2, "ვინმე", "ვინმეს გვარი"));
         list.add(new User(3, "asd", "ასდ გვარი"));
         list.add(new User(4, "ასდადსა", "ვინმეს გვარი"));
-        list.add(new User(4, "ასდადსა", "ვინმეს გვარი"));
+        list.add(new User(4, "ასდადსა", "ვინმეს asdasd"));
         return list;
     }
 
