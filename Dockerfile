@@ -9,4 +9,4 @@ EXPOSE 8080
 
 #  next step enter into docker installed server & run container from image of dockerhub
 #  pattern sudo docker run -p outer-port:inner-port uchachaduneli/same-name-for-repo
-#  Examle:  sudo docker run -p 80:8080 uchachaduneli/same-name-for-repo
+#  Examle:  sudo docker run -p 8080:8080 uchachaduneli/same-name-for-repo
