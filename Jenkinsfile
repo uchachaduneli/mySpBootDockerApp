@@ -1,16 +1,11 @@
-pipeline {
-    agent any
-    tools {
-        maven 'Maven 3.6'
-    }
-    stages {
-        stage ('Build') {
-            step{
+
+    node {
+        def mvnHome = tool name: 'maven-3.6', type: 'maven'
+        stage ('git checkout stage') {
                 git url: 'https://github.com/uchachaduneli/mySpBootDockerApp'
-            }
-            step{
-                    sh 'mvn clean install'
-            }
           }
+        stage ('git checkout stage') {
+              sh '${mvnHome}/bin/mvn clean install'
+         }
     }
-}
+
